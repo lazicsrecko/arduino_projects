@@ -1,6 +1,6 @@
 # arduino_projects
 
-# WORKSTATION ENVIRONMENT
+# Workstation environment
 
 Virtual Machine:
 
