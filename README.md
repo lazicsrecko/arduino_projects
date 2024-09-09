@@ -6,7 +6,7 @@ Virtual Machine:
 
 OS: Linux Fedora
 
--Kernel version: 6.8.5-301.fc40.x86_64
+- Kernel version: 6.8.5-301.fc40.x86_64
 
 Tools:
 
