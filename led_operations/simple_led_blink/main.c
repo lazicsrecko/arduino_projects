@@ -1,7 +1,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-#include "../common_types.h"
+#include "../../common_types.h"
 
 int OUTPUT = 0x1;
 int HIGH = 0x1;

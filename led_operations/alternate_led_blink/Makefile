@@ -13,7 +13,7 @@ PROGRAMMER=arduino
 PORT=/dev/ttyACM0
 
 TARGET=main
-SOURCES=../common_types.c $(TARGET).c
+SOURCES=../../common_types.c $(TARGET).c
 
 CFLAGS = -mmcu=$(MCU) -DF_CPU=$(F_CPU) -Os
 
