@@ -3,22 +3,15 @@
 
 #include "../../common_types.h"
 
-int OUTPUT = 0x1;
-int HIGH = 0x1;
-int LOW = 0x0;
-
 int main(void) {
 	int loop_flag = 1;
 
-	// Sets pin 13 (PB5) as output
-	//DDRB |= (1 << DDB5);
+	// Sets pin 12 (PB4) as output
 	setPinMode(12, OUTPUT);
 
 	while(loop_flag) {
 		// Toggle LED
-		//PORTB ^= (1 << PORTB5);
 		
-		//PORTB ^= (1 << PORTB4);
 		digitalPinWrite(12, HIGH);
 		_delay_ms(2500);
 
