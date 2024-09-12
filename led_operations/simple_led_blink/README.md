@@ -1,6 +1,6 @@
 Components used:
 - Arduino Uno R3
-- 220 kOhms Resistor 
+- 220 Ohm Resistor 
 - Red LED
 
 Board schematics:
