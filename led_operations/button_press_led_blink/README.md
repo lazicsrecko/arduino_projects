@@ -5,4 +5,4 @@ Components used:
 - Red LED
 - Push Button 
 Board schematics:
-![Board schematic](https://github.com/lazicsrecko/arduino_projects/blob/main/led_operations/simple_led_blink/circut_design_button_press_led_blink.png)
+![Board schematic](https://github.com/lazicsrecko/arduino_projects/blob/main/led_operations/button_press_led_blink/circut_design_button_press_led_blink.png)
