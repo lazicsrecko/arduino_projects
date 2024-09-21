@@ -18,7 +18,7 @@ Tools:
   
   - Build system: GNU Make 4.4.1
   
-  - Code editor: Vim 9.1
+  - Code editor: Vim 9.1 & VS Code 
   
 # Hardware:
-  Arduino UNO R3 with Atmel atmega328p microcontoller unit
+  Arduino UNO R3 with Atmel atmega328p microcontroller
