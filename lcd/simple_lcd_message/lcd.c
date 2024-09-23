@@ -22,6 +22,9 @@ void lcd_init_4bit(void) {
 
 	send_command_4bit(LCD_CMD_CLEAR_DISPLAY);
 	_delay_ms(500);
+
+	// Sets CTL_DDR pins(3 and 6) to input mode so button can be used to control dispalay shift
+	CTL_DDR &= ~(HIGH << LCD_LEFT) & ~(HIGH << LCD_RIGHT);
 }
 
 void send_command_4bit(unsigned char command) {
@@ -119,4 +122,12 @@ void send_nibble(unsigned char nibble) {
 	} else {
 		DATA_BUS &= ~(HIGH << LCD_D7);
 	}
+}
+
+void shift_display_to_left(void) {
+	send_command_4bit(LCD_CMD_SHIFT_TO_LEFT);
+}
+
+void shift_display_to_right(void) {
+	send_command_4bit(LCD_CMD_SHIFT_TO_RIGHT);
 }
