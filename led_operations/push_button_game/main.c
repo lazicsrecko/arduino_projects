@@ -12,7 +12,7 @@ int main(void) {
 	// DDRD (Data direction register D) data direction for pins 0 to 7
 	DDRB |= (OUTPUT << DDB5) | (OUTPUT << DDB4) | (OUTPUT << DDB3) | (OUTPUT << DDB2);
 	DDRD |= (OUTPUT << DDD4) | (OUTPUT << DDD5) | (OUTPUT << DDD6) | (OUTPUT << DDD7);
-	DDRD |= (INPUT << DDD2) | (INPUT << DDD3);
+	DDRD &= ~(INPUT << DDD2) & ~(INPUT << DDD3);
 
 	char is_pressed = 0;
 	int debounce_margin = 500;
