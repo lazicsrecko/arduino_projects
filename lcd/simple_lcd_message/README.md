@@ -5,4 +5,4 @@ Components used:
 - 10 kOhm Potentiometer 
 
 Board schematics:
-![Board schematic](https://github.com/lazicsrecko/arduino_projects/blob/main/led_operations/simple_lcd_message/lcd_message_circut_design.png)
+![Board schematic](https://github.com/lazicsrecko/arduino_projects/blob/main/lcd/simple_lcd_message/lcd_message_circut_design.png)
