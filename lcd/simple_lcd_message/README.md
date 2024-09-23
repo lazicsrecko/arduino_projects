@@ -1,5 +1,5 @@
 Components used:
-- Arduino Uno R3
+- Arduino Uno R3 with Atmega328p microcontroller
 - LCD 16 x 2
 - 220 Ohm Resistor 
 - 10 kOhm Potentiometer 
