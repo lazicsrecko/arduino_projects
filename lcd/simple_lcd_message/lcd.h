@@ -13,6 +13,11 @@
 #define LCD_CMD_CURSOR_BLINK 0x0F // Also could be set to 0b00001111
 #define LCD_CMD_SHIFT_TO_LEFT 0x18
 #define LCD_CMD_SHIFT_TO_RIGHT 0x1C
+#define LCD_CMD_CURSOR_FIRST_LINE 0x80
+#define LCD_CMD_CURSOR_SECOND_LINE 0xC0
+#define LCD_CMD_LEFT_TO_RIGHT_TEXT 0x05
+#define LCD_CMD_RIGHT_TO_LEFT_TEXT 0x07
+#define LCD_CMD_DEFAULT_TEXT 0x06
 
 // LCD Data transfer mode
 #define LCD_CMD_4BIT_5x11 0x2c 
@@ -40,13 +45,9 @@
 #define LCD_RIGHT 3
 
 void lcd_init_4bit(void);
-void lcd_init_8bit(void);
-void send_command_4bit(unsigned char command);
-void send_command_8bit(unsigned char command);
-void write_character_4bit(unsigned char character);
-void write_character_8bit(unsigned char character);
-void write_message_4bit(char *message);
-void write_message_8bit(unsigned char *message);
+void send_command(unsigned char command);
+void write_character(unsigned char character);
+void write_message(unsigned char *message);
 void clear_lcd(void);
 void flash_data(void);
 void clear_data_bus(void);
@@ -54,5 +55,7 @@ void is_lcd_busy(void);
 void send_nibble(unsigned char nibble);
 void shift_display_to_left(void);
 void shift_display_to_right(void);
+void set_cursor(char column, char row);
+void scroll_text(unsigned char direction);
 
 #endif
